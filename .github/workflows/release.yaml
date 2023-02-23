@@ -30,7 +30,7 @@ jobs:
           file: cli.Dockerfile
           push: true
           platforms: linux/amd64,linux/ppc64le
-          tags: quay.io/raja0940/clair-action:${{ github.ref_name }}
+          tags: quay.io/projectquay/clair-action:${{ github.ref_name }}
           build-args: |
             CLAIR_ACTION_VERSION=${{ github.ref_name }}
       - name: Checkout
